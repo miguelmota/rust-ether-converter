@@ -17,7 +17,11 @@ fn main() {
     }
 
     let val = &args[1];
-    let unit = &args[2].to_lowercase();
+    let mut unit = args[2].to_lowercase();
+
+    if unit == "eth" {
+        unit = "ether".to_string();
+    }
 
     let mut ordermap: HashMap<usize, &str> = HashMap::new();
     ordermap.insert(0, "wei");
@@ -32,7 +36,7 @@ fn main() {
     ordermap.insert(9, "gether");
     ordermap.insert(10, "tether");
 
-    let map = convert(val, unit);
+    let map = convert(&val, &unit);
     for i in 0..ordermap.len() {
         let unit = ordermap.get(&i).unwrap();
         let value = map.get(unit).unwrap();
