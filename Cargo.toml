@@ -1,6 +1,6 @@
 [package]
 name = "ether_convert"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Miguel Mota <hello@miguelmota.com>"]
 description = "Ether unit converter"
 readme = "README.md"
@@ -13,4 +13,4 @@ regex = "1"
 
 [[bin]]
 name = "ether_convert"
-path = "src/main.rs"
+path = "src/bin/main.rs"
