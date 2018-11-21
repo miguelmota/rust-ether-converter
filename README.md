@@ -2,7 +2,7 @@
 
 > Ether unit converter CLI in Rust
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/ether_convert/master/LICENSE) [![Crates.io](https://img.shields.io/crates/v/ether_convert.svg)](https://crates.io/crates/ether_convert)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/ether_convert/master/LICENSE) [![Build status](https://travis-ci.org/miguelmota/ether_convert.svg)](https://travis-ci.org/miguelmota/ether_convert) [![Crates.io](https://img.shields.io/crates/v/ether_convert.svg)](https://crates.io/crates/ether_convert)
 
 ## Install
 

@@ -12,3 +12,7 @@ test:
 .PHONY: publish
 publish:
 	@cargo publish
+
+.PHONY: test
+test:
+	@cargo test --verbose
