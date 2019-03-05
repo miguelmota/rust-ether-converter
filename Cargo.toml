@@ -1,11 +1,11 @@
 [package]
 name = "ether-converter"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Miguel Mota <hello@miguelmota.com>"]
 description = "Ether unit converter"
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/migiuelmota/rust-ether-converter"
+repository = "https://github.com/miguelmota/rust-ether-converter"
 
 [dependencies]
 bigdecimal = "0.0.14"
