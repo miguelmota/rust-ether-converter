@@ -14,7 +14,7 @@ cargo install ether-converter
 
 Using the library:
 
-```bash
+```rust
 extern crate ether_converter;
 
 fn main() {
