@@ -71,6 +71,12 @@ gether  0.00000000000000003
 tether  0.00000000000000000003
 ```
 
+## Test
+
+```bash
+make test
+```
+
 # License
 
 [MIT](LICENSE)
