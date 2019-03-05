@@ -1,5 +1,4 @@
-all:
-	@echo "no default"
+all: test
 
 .PHONY: run
 run:
@@ -7,12 +6,12 @@ run:
 
 .PHONY: test
 test:
-	cargo test
+	cargo test --verbose -- --nocapture
 
 .PHONY: publish
 publish:
 	@cargo publish
 
-.PHONY: test
-test:
-	@cargo test --verbose
+.PHONY: example
+example:
+	cargo run --example main

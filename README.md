@@ -1,25 +1,44 @@
-# ether_convert
+# ether-converter
 
-> Ether unit converter CLI in Rust
+> Ether unit converter library and CLI in Rust
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/ether_convert/master/LICENSE) [![Build status](https://travis-ci.org/miguelmota/ether_convert.svg)](https://travis-ci.org/miguelmota/ether_convert) [![Crates.io](https://img.shields.io/crates/v/ether_convert.svg)](https://crates.io/crates/ether_convert)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/rust-ether-converter/master/LICENSE) [![Build status](https://travis-ci.org/miguelmota/rust-ether-converter.svg)](https://travis-ci.org/miguelmota/rust-ether-converter) [![Crates.io](https://img.shields.io/crates/v/ether-converter.svg)](https://crates.io/crates/ether-converter)
 
 ## Install
 
 ```bash
-cargo install ether_convert
+cargo install ether-converter
 ```
 
 ## Getting started
 
+Using the library:
+
 ```bash
-$ ether_convert {value} {unit}
+extern crate ether_converter;
+
+fn main() {
+    let amt = "1";
+    let amt_unit = "ether";
+    let to_unit = "wei";
+    let map = ether_converter::convert(&amt, &amt_unit);
+    let val = map.get(to_unit).unwrap();
+
+    println!("{} {} = {} {}", amt, amt_unit, val, to_unit);
+    // 1 ether = 1000000000000000000 wei
+}
 ```
 
-### Examples
+## CLI
 
 ```bash
-$ ether_convert 10 ether
+$ ether_converter {value} {unit}
+```
+
+Example:
+
+```bash
+$ ether_converter 10 ether
 
 wei     10000000000000000000
 kwei    10000000000000000
@@ -34,8 +53,10 @@ gether  0.00000001
 tether  0.00000000001
 ```
 
+Another example:
+
 ```bash
-$ ether_convert 30 gwei
+$ ether_converter 30 gwei
 
 wei     30000000000
 kwei    30000000

@@ -1,16 +1,16 @@
 [package]
-name = "ether_convert"
-version = "0.1.1"
+name = "ether-converter"
+version = "0.1.0"
 authors = ["Miguel Mota <hello@miguelmota.com>"]
 description = "Ether unit converter"
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/migiuelmota/ether-convert"
+repository = "https://github.com/migiuelmota/rust-ether-converter"
 
 [dependencies]
 bigdecimal = "0.0.14"
 regex = "1"
 
 [[bin]]
-name = "ether_convert"
+name = "ether_converter"
 path = "src/bin/main.rs"
