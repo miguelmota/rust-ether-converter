@@ -77,6 +77,6 @@ tether  0.00000000000000000003
 make test
 ```
 
-# License
+## License
 
 [MIT](LICENSE)

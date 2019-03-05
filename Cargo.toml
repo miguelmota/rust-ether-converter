@@ -1,6 +1,6 @@
 [package]
 name = "ether-converter"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Miguel Mota <hello@miguelmota.com>"]
 description = "Ether unit converter"
 readme = "README.md"
